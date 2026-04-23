@@ -1,26 +1,162 @@
-/* style.css */
-body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; color: #333; }
-header { background: #fff; padding: 10px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #2e7d32; position: sticky; top: 0; z-index: 1000; }
-.logo img { height: 60px; }
-nav a { margin-left: 20px; text-decoration: none; color: #2e7d32; font-weight: bold; }
-.hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('PEAKAGRO.jpg'); background-size: cover; background-position: center; height: 400px; color: white; display: flex; flex-direction: column; justify-content: center; text-align: center; padding: 0 10%; }
-.container { padding: 40px 10%; }
-.product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 20px; }
-.product-card { border: 1px solid #ddd; padding: 15px; border-radius: 8px; text-align: center; background: #f9f9f9; }
-.product-card img { width: 100%; max-height: 250px; object-fit: contain; }
-.contact-footer { background: #2e7d32; color: white; padding: 30px 10%; margin-top: 50px; }
+/* --- 基础样式 (保留你原本的设置) --- */
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    line-height: 1.6; 
+    margin: 0; 
+    color: #333; 
+}
+
+header { 
+    background: #fff; 
+    padding: 10px 5%; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    border-bottom: 3px solid #2e7d32; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+}
+
+/* 新增：Logo 容器布局，让图片和文字并排 */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* 图片和文字的间距 */
+}
+
+.logo img { 
+    height: 60px; 
+    width: auto;
+}
+
+/* 新增：公司名称样式 */
+.company-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #2e7d32;
+    white-space: nowrap; /* 保证名字在同一行 */
+}
+
+nav a { 
+    margin-left: 20px; 
+    text-decoration: none; 
+    color: #2e7d32; 
+    font-weight: bold; 
+}
+
+.hero { 
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('PEAKAGRO.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 400px; 
+    color: white; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    text-align: center; 
+    padding: 0 10%; 
+}
+
+.container { 
+    padding: 40px 10%; 
+}
+
+/* 这里的 minmax(300px, 1fr) 已经具备初步自适应，但在窄手机上需要微调 */
+.product-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px; 
+    margin-top: 20px; 
+}
+
+.product-card { 
+    border: 1px solid #ddd; 
+    padding: 15px; 
+    border-radius: 8px; 
+    text-align: center; 
+    background: #f9f9f9; 
+}
+
+.product-card img { 
+    width: 100%; 
+    max-height: 250px; 
+    object-fit: contain; 
+}
+
+.contact-footer { 
+    background: #2e7d32; 
+    color: white; 
+    padding: 30px 10%; 
+    margin-top: 50px; 
+}
+
 h1, h2 { color: #2e7d32; }
 .hero h1 { color: #fff; }
-/* �ײ�������ʽ */
+
 .contact-footer a {
     color: #ffffff;
     text-decoration: underline;
     margin: 0 10px;
     transition: opacity 0.3s;
 }
+
 .contact-footer a:hover {
     opacity: 0.8;
 }
+
 .footer-links {
     margin-top: 10px;
+}
+
+/* =============================================
+   新增：手机端自适应代码 (Media Queries)
+   ============================================= */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* 手机端抬头垂直排列 */
+        padding: 15px 5%;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    .company-name {
+        font-size: 1.1rem; /* 手机端文字稍微缩小一点点 */
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap; /* 导航链接太多时自动换行 */
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 5px 10px; /* 调整间距防止误触 */
+        font-size: 14px;
+    }
+
+    .hero {
+        height: 300px; /* 手机端海报区高度减小 */
+    }
+
+    .hero h1 {
+        font-size: 1.5rem; /* 减小手机端大标题字号 */
+    }
+
+    .container {
+        padding: 20px 5%; /* 减小两侧留白 */
+    }
+
+    .contact-footer {
+        padding: 20px 5%;
+        text-align: center;
+    }
+
+    .contact-footer a {
+        display: inline-block;
+        margin: 5px; /* 让页脚链接在窄屏下更易点击 */
+    }
 }
