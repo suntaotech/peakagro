@@ -180,31 +180,36 @@ h1, h2 { color: #2e7d32; margin-bottom: 15px; }
 /* =============================================
    5. 手机/平板自适应 (Media Queries)
    ============================================= */
-@media (max-width: 992px) {
-    .company-name { font-size: 1.6rem; }
-}
-
 @media (max-width: 768px) {
     header {
-        flex-direction: column;    /* 手机端 Logo 在上，导航在下 */
-        padding: 8px 5%;
+        /* 将 padding 从 15px 减少到 8px */
+        padding: 8px 5%; 
+        flex-direction: column; 
     }
 
-    .logo { margin-bottom: 5px; }
+    .logo { 
+        /* 将下边距从 15px 减少到 5px */
+        margin-bottom: 5px; 
+        gap: 8px; /* 缩小图片和文字的间距 */
+    }
+
+    .logo img { 
+        /* 将 Logo 高度从 65px 缩小，建议 40-45px */
+        height: 40px; 
+    }
 
     .company-name {
-        font-size: 1.2rem;         /* 缩小公司名防止溢出 */
+        font-size: 1.1rem; /* 稍微再缩小一点字号 */
     }
 
     nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+        gap: 4px; /* 缩小导航链接之间的间距 */
     }
 
     nav a {
-        margin: 5px;
-        font-size: 0.95rem;
+        margin: 2px 3px; /* 减少外边距 */
+        font-size: 0.6rem;
+    }
     }
 
     .hero {
