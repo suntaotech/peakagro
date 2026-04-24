@@ -141,16 +141,18 @@ h1, h2 { color: #2e7d32; margin-bottom: 15px; }
 .contact-footer { 
     background: #2e7d32; 
     color: white; 
-    padding: 30px 5%; 
+    padding: 30px 5%; /* 适当减少上下内边距，增加左右空间 */
     margin-top: 50px; 
     text-align: center;
 }
 
 .footer-links {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* 手机端自动换行 */
-    gap: 25px;
+    /* 关键：确保在 PC 端水平居中并排 */
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: nowrap; /* 强制不换行，保持并排 */
+    gap: 40px;        /* 增加联系方式之间的间距 */
     margin-top: 20px;
 }
 
@@ -158,7 +160,7 @@ h1, h2 { color: #2e7d32; margin-bottom: 15px; }
     display: flex;
     align-items: center;
     gap: 8px;
-   white-space: nowrap;
+    white-space: nowrap; /* 防止文字在并排时内部换行 */
 }
 
 .contact-item span {
