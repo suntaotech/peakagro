@@ -149,7 +149,7 @@ h1, h2 { color: #2e7d32; margin-bottom: 15px; }
 .footer-links {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* 手机端自动换行 */
+    flex-wrap: nowrap; /* 手机端自动换行 */
     gap: 25px;
     margin-top: 20px;
 }
