@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEAKAGRO CO.LTD - Your Trusted Partner in Agriculture</title>
+    <style>
+        /* 基础样式 */
+        body { margin: 0; font-family: Arial, sans-serif; color: #1f2937; line-height: 1.4; }
+        
+        /* 页眉优化 */
+        header { display: flex; flex-direction: column; padding: 10px 15px; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,.05); position: sticky; top: 0; z-index: 10; }
+        .logo { display: flex; align-items: center; gap: 8px; }
+        .logo img { height: 30px; }
+        .company-name { font-weight: 700; font-size: 16px; }
+        nav { display: flex; justify-content: space-between; margin-top: 8px; border-top: 1px solid #eee; padding-top: 8px; }
+        nav a { color: #111; text-decoration: none; font-size: 11px; font-weight: 600; }
+
+        /* Banner 图片区 */
+        .banner-container { width: 100%; overflow: hidden; }
+        .banner-img { width: 100%; display: block; }
+
+        /* 内容区 */
+        .container { padding: 20px; max-width: 900px; margin: auto; }
+        .section-title { text-align: center; font-size: 24px; margin-top: 30px; }
+        .text-content { font-size: 18px; line-height: 1.4; color: #374151; }
+        .grid-box { display: grid; grid-template-columns: 1fr; gap: 15px; margin-top: 20px; }
+        .product-card { border: 1px solid #eee; padding: 15px; border-radius: 8px; background-color: #f3f4f6; }
+        
+        /* 页脚优化 */
+        .contact-footer { background: #0b3d0b; color: #fff; padding: 20px; text-align: center; font-size: 15px; } /* 字体变大 */
+        .footer-address { margin: 0 0 10px 0; font-weight: bold; }
+        .footer-links { display: flex; flex-direction: column; gap: 8px; }
+        .footer-links a { color: #fff; text-decoration: none; font-weight: bold; }
+
+        /* 电脑端适配 */
+        @media(min-width:640px){
+            header { flex-direction: row; justify-content: space-between; padding: 15px 40px; }
+            nav { border-top: none; margin-top: 0; padding-top: 0; gap: 20px; }
+            nav a { font-size: 14px; }
+            .grid-box { grid-template-columns: 1fr 1fr; }
+            .footer-links { flex-direction: row; justify-content: center; gap: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+        <span class="company-name">PEAKAGRO CO.LTD (UGANDA)</span>
+    </div>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="fungicide.html">FUNGICIDE</a>
+        <a href="insecticide.html">INSECTICIDE</a>
+        <a href="herbicide.html">HERBICIDE</a>
+        <a href="public_health.html">PUBLIC HEALTH</a>
+    </nav>
+</header>
+
+<div class="banner-container">
+    <img src="banner.jpg" class="banner-img" alt="Banner">
+</div>
+
+<div class="container">
+    <h2 class="section-title">About Us</h2>
+    <p class="text-content">PEAKAGRO CO.LTD is a fully registered company in Uganda. It is a leading importer, and distributor of agrochemicals, fertilizers and other farm inputs in Uganda. Our supply of products meet the highest standards in production, quality, safety and service.</p>
+    
+    <div class="grid-box">
+        <div class="product-card">
+            <h3>Our Strengths</h3>
+            <ul style="text-align: left; padding-left: 20px;">
+                <li>Ethical and well respected company in Uganda for the last decade</li>
+                <li>Experienced management team & highly qualified personnel</li>
+                <li>Strong partnerships with multinationals</li>
+                <li>Excellent financial track record</li>
+            </ul>
+        </div>
+        <div class="product-card">
+            <h3>Our Mission</h3>
+            <p>Dedicated to serve farmers on all scales by providing original, reliable and latest premium quality Agro inputs.</p>
+        </div>
+    </div>
+
+    <h2 class="section-title" style="margin-top: 40px;">Our Business</h2>
+    <p class="text-content">To import and distribute agrochemicals, fertilizers and sprayers. We service the entire Agricultural Sector namely Sugar, Tea, Coffee, Tobacco, Cotton, Horticulture and Floriculture.</p>
+</div>
+
+<footer class="contact-footer">
+    <p class="footer-address">Add: Kampala, Mulago 1, Upper Mawanda, Uganda</p>
+    <div class="footer-links">
+        <div class="contact-item">
+            <span>WHATSAPP:</span> <a href="https://wa.me/256742971615">+256742971615</a>
+        </div>
+        <div class="contact-item">
+            <span>EMAIL:</span> <a href="mailto:info@pkagro.top">info@pkagro.top</a>
+        </div>
+        <div class="contact-item">
+            <span>FACEBOOK:</span> <a href="https://fb.com/PKAGO" target="_blank">fb.com/PKAGO</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

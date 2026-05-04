@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insecticides - PEAKAGRO CO.LTD</title>
+    <style>
+        /* 核心布局样式 */
+        body { margin: 0; font-family: Arial, sans-serif; color: #333; }
+        
+        /* 页眉 */
+        header { padding: 10px 5%; background: #fff; border-bottom: 2px solid #2e7d32; display: flex; flex-direction: column; align-items: center; }
+        .logo { display: flex; align-items: center; gap: 10px; width: 100%; justify-content: flex-start; }
+        .logo img { height: 35px; }
+        .company-name { font-weight: 700; font-size: 1.2rem; color: #2e7d32; }
+        nav { display: flex; justify-content: space-between; width: 100%; margin-top: 8px; border-top: 1px solid #eee; padding-top: 8px; }
+        nav a { text-decoration: none; color: #2e7d32; font-weight: bold; font-size: 11px; }
+
+        /* 内容 */
+        .container { padding: 20px 5%; max-width: 1000px; margin: auto; }
+        .section-title { text-align: center; color: #2e7d32; margin-bottom: 20px; }
+        .product-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+        .product-card { border: 1px solid #ddd; padding: 15px; border-radius: 8px; background: #f9f9f9; }
+        .product-card img { width: 100%; max-height: 200px; object-fit: contain; }
+        .product-info { margin-top: 10px; font-size: 14px; }
+
+        /* 页脚 */
+        .contact-footer { background: #2e7d32; color: white; padding: 20px; text-align: center; font-size: 15px; }
+        .footer-address { font-weight: bold; margin-bottom: 10px; }
+        .footer-links { display: flex; flex-direction: column; gap: 5px; }
+        .footer-links a { color: #fff; text-decoration: none; font-weight: bold; }
+
+        /* 电脑端响应式 */
+        @media (min-width: 768px) {
+            header { flex-direction: row; justify-content: space-between; padding: 15px 10%; }
+            .logo { width: auto; }
+            nav { width: auto; border-top: none; padding-top: 0; gap: 20px; }
+            nav a { font-size: 14px; }
+            .product-grid { grid-template-columns: 1fr 1fr 1fr; }
+            .footer-links { flex-direction: row; justify-content: center; gap: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <span class="company-name">PEAKAGRO CO.LTD (UGANDA)</span>
+        </div>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="fungicide.html">FUNGICIDE</a>
+            <a href="insecticide.html">INSECTICIDE</a>
+            <a href="herbicide.html">HERBICIDE</a>
+            <a href="public_health.html">PUBLIC HEALTH</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Insecticides</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="8.jpg" alt="Chlorantraniliprole">
+                <h3>Chlorantraniliprole 200g/L SC</h3>
+                <div class="product-info">
+                    <p><strong>Target Crops:</strong> Maize, Cabbage, Tomatoes.</p>
+                    <p><strong>Usage:</strong> 5-10ml per 20L water.</p>
+                    <p><strong>Target:</strong> Fall Armyworm, Diamondback Moth.</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="6.jpg" alt="Lambda-cyhalothrin">
+                <h3>Lambda-cyhalothrin 50g/L EC</h3>
+                <div class="product-info">
+                    <p><strong>Target Crops:</strong> Vegetables, Cotton, Fruit Trees.</p>
+                    <p><strong>Usage:</strong> 20ml per 20L water.</p>
+                    <p><strong>Target:</strong> Aphids, Thrips, Whiteflies.</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="7.jpg" alt="Lambda-cyhalothrin WP">
+                <h3>Lambda-cyhalothrin 10% WP</h3>
+                <div class="product-info">
+                    <p><strong>Target Crops:</strong> General crops and structural areas.</p>
+                    <p><strong>Usage:</strong> 20-40g per 15L water.</p>
+                    <p><strong>Target:</strong> Crawling and flying insects.</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="9.jpg" alt="Abamectin">
+                <h3>Abamectin 5% EC</h3>
+                <div class="product-info">
+                    <p><strong>Target Crops:</strong> Horticultural crops.</p>
+                    <p><strong>Usage:</strong> 10-15ml per 20L water.</p>
+                    <p><strong>Target:</strong> Mites, Leaf miners.</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="10.jpg" alt="Acetamiprid">
+                <h3>Acetamiprid 20% SP</h3>
+                <div class="product-info">
+                    <p><strong>Target Crops:</strong> Vegetables, Cotton.</p>
+                    <p><strong>Usage:</strong> 10g per 20L water.</p>
+                    <p><strong>Target:</strong> Whiteflies, Sucking insects.</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="11.jpg" alt="Imidacloprid">
+                <h3>Imidacloprid 350g/L SC</h3>
+                <div class="product-info">
+                    <p><strong>Target Crops:</strong> Soil application and foliar.</p>
+                    <p><strong>Usage:</strong> 15-20ml per 20L water.</p>
+                    <p><strong>Target:</strong> Termites, Aphids, Thrips.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="contact-footer">
+        <p class="footer-address">Add:Kampala, Mulago 1, Upper Mawanda, Uganda</p>
+        <div class="footer-links">
+            <div class="contact-item"><span>WHATSAPP:</span> <a href="https://wa.me/256742971615">+256742971615</a></div>
+            <div class="contact-item"><span>EMAIL:</span> <a href="mailto:info@pkagro.top">info@pkagro.top</a></div>
+            <div class="contact-item"><span>FACEBOOK:</span> <a href="https://fb.com/PKAGO" target="_blank">fb.com/PKAGO</a></div>
+        </div>
+    </footer>
+</body>
+</html>
